@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #map {height: 500px;
+                width: 100%;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"> </div>
+        <script>
+            function initMap(){
+                var location = {lat: 18.153200,lng: 74.578700};
+                var map = new google.maps.Map(document.getElementById("map"),{
+                    zoom: 4,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map:map
+                });
+            }
+            
+        </script>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1875.736902984174!2d74.28559900100159!3d19.904429002030557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc39fe0bf831021%3A0x259068a6b88d6806!2sVP%20New%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1651511934213!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </body>
+</html>
